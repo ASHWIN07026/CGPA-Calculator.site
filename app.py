@@ -32,4 +32,4 @@ def calculate():
     return render_template('result.html', cgpa=cgpa, total_credits=total_credits, subjects=subjects)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
